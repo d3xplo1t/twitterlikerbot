@@ -29,4 +29,7 @@ while True:
     except tweepy.errors.NotFound:
         print("tweet not found")
         time.sleep(2)
+    except tweepy.errors.TooManyRequests:
+        print("too many requests, lol")
+        time.sleep(3600)
 
